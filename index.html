@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .btn {
+            font-weight: 700;
+            padding: 8px 20px;
+            border: 2px solid #000;
+            outline: none;
+            font-size: 16px;
+            margin-right: 15px;
+            text-transform: uppercase;
+        }
+        img
+        {
+            width: 300px;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="head">Bulb <span id="text"></span> </h1>
+        <img id="imag" src="" alt="Bulb">
+        <div>
+            <button onclick="onbtn()" class="btn" id="on">on</button>
+            <button  onclick="offbtn()" class="btn" id="off">off</button>
+        </div>
+    </div>
+    <script>
+    document.getElementById("imag").src ="images/of.png"
+    document.getElementById("text").innerHTML = "off"
+    document.getElementById("off").style.backgroundColor ="#fac43b"
+        document.getElementById("off").style.color ="#fff"
+
+   
+
+    function onbtn(){
+        document.getElementById("imag").src ="images/on.png"
+        document.getElementById("text").innerHTML = "on"
+        document.getElementById("on").style.backgroundColor ="#fac43b"
+        document.getElementById("on").style.color ="#fff"
+        document.getElementById("off").style.backgroundColor ="#fff"
+        document.getElementById("off").style.color ="#000"
+      
+
+    }
+
+    function offbtn(){
+        document.getElementById("imag").src ="images/of.png"
+        document.getElementById("text").innerHTML = "off"
+       
+        document.getElementById("on").style.backgroundColor ="#fff"
+        document.getElementById("on").style.color ="#000"
+        document.getElementById("off").style.backgroundColor ="#fac43b"
+        document.getElementById("off").style.color ="#fff"
+       
+        
+    }
+    </script>
+</body>
+</html>

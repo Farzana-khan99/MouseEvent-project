@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box {
+        background: red;
+        width: 200px;
+        height: 200px;
+        margin-top: 40px;
+    }
+</style>
+
+<body>
+
+
+
+    <h1>hello world</h1>
+
+    <button onmouseup="show()">click me</button>
+
+    <script>
+
+        // onclick
+        // ondblclick
+        // onmouseover
+        // onmouseout
+        // onmousedown
+        // onmouseup
+        // oncontextmenu
+
+        function show() {
+            document.querySelector("h1").style.backgroundColor = "green"
+            // document.write("button click")
+        }
+
+        function doubleClick() {
+            document.querySelector("h1").style.backgroundColor = "blue"
+        }
+
+    </script>
+</body>
+
+</html>
